@@ -47,6 +47,10 @@
   <ItemGroup>
      <Compile Include="Assets\DestroyObject.cs" />
      <Compile Include="Assets\Scripts\Agent.cs" />
+     <Compile Include="Assets\Scripts\Daniel\BulletSpawn.cs" />
+     <Compile Include="Assets\Scripts\Daniel\CharakterAnimation.cs" />
+     <Compile Include="Assets\Scripts\Daniel\GatlinRotate.cs" />
+     <Compile Include="Assets\Scripts\Daniel\Rotatet.cs" />
      <Compile Include="Assets\Scripts\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\EnemyStateUI.cs" />
      <Compile Include="Assets\Scripts\LevelSwitch.cs" />

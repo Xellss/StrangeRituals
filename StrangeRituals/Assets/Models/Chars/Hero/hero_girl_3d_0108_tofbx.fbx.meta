@@ -1,0 +1,194 @@
+fileFormatVersion: 2
+guid: 7faa2a576b104424ca4ee8b13b42edfc
+timeCreated: 1446919851
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: 00_Alice
+    100002: Ammo
+    100004: Cloner
+    100006: Cube
+    100008: Cylinder_1
+    100010: Cylinder_1_0
+    100012: Cylinder_1_1
+    100014: Cylinder_1_2
+    100016: Cylinder_1_2_2
+    100018: Cylinder_1_3
+    100020: Cylinder_1_3_2
+    100022: Cylinder_1_4
+    100024: Cylinder_1_5
+    100026: Cylinder_1_6
+    100028: Girl_Mesh
+    100030: Gun_Body
+    100032: Hair
+    100034: Head
+    100036: Head_Tip
+    100038: //RootNode
+    100040: Hip
+    100042: Joint
+    100044: Joint_1
+    100046: Kleid
+    100048: L_Hand
+    100050: L_Hand_Goal
+    100052: L_HandTip
+    100054: L_Lower
+    100056: L_Upper
+    100058: MiniGun
+    100060: R_Hand
+    100062: R_Hand_Goal
+    100064: R_HandTip
+    100066: R_Lower
+    100068: R_Upper
+    100070: Rig
+    100072: Rock
+    100074: Skin
+    400000: 00_Alice
+    400002: Ammo
+    400004: Cloner
+    400006: Cube
+    400008: Cylinder_1
+    400010: Cylinder_1_0
+    400012: Cylinder_1_1
+    400014: Cylinder_1_2
+    400016: Cylinder_1_2_2
+    400018: Cylinder_1_3
+    400020: Cylinder_1_3_2
+    400022: Cylinder_1_4
+    400024: Cylinder_1_5
+    400026: Cylinder_1_6
+    400028: Girl_Mesh
+    400030: Gun_Body
+    400032: Hair
+    400034: Head
+    400036: Head_Tip
+    400038: //RootNode
+    400040: Hip
+    400042: Joint
+    400044: Joint_1
+    400046: Kleid
+    400048: L_Hand
+    400050: L_Hand_Goal
+    400052: L_HandTip
+    400054: L_Lower
+    400056: L_Upper
+    400058: MiniGun
+    400060: R_Hand
+    400062: R_Hand_Goal
+    400064: R_HandTip
+    400066: R_Lower
+    400068: R_Upper
+    400070: Rig
+    400072: Rock
+    400074: Skin
+    2300000: Ammo
+    2300002: Cube
+    2300004: Cylinder_1
+    2300006: Cylinder_1_0
+    2300008: Cylinder_1_1
+    2300010: Cylinder_1_2
+    2300012: Cylinder_1_2_2
+    2300014: Cylinder_1_3
+    2300016: Cylinder_1_3_2
+    2300018: Cylinder_1_4
+    2300020: Cylinder_1_5
+    2300022: Cylinder_1_6
+    2300024: Gun_Body
+    3300000: Ammo
+    3300002: Cube
+    3300004: Cylinder_1
+    3300006: Cylinder_1_0
+    3300008: Cylinder_1_1
+    3300010: Cylinder_1_2
+    3300012: Cylinder_1_2_2
+    3300014: Cylinder_1_3
+    3300016: Cylinder_1_3_2
+    3300018: Cylinder_1_4
+    3300020: Cylinder_1_5
+    3300022: Cylinder_1_6
+    3300024: Gun_Body
+    4300000: Hair
+    4300002: Skin
+    4300004: Kleid
+    4300006: Cube
+    4300008: Ammo
+    4300010: Cylinder_1
+    4300012: Cylinder_1_0
+    4300014: Cylinder_1_1
+    4300016: Cylinder_1_2
+    4300018: Cylinder_1_3
+    4300020: Cylinder_1_4
+    4300022: Cylinder_1_5
+    4300024: Cylinder_1_6
+    4300026: Cylinder_1_2_2
+    4300028: Cylinder_1_3_2
+    4300030: Gun_Body
+    7400000: Main
+    9500000: //RootNode
+    13700000: Hair
+    13700002: Kleid
+    13700004: Skin
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

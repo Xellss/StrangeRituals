@@ -31,3 +31,5 @@
 # Debug files
 *.dSYM/
 StrangeRituals/Temp/UnityLockfile
+*.info
+*.bin

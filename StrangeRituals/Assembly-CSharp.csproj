@@ -45,39 +45,22 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DestroyObject.cs" />
-     <Compile Include="Assets\Scripts\Agent.cs" />
      <Compile Include="Assets\Scripts\Daniel\BulletSpawn.cs" />
      <Compile Include="Assets\Scripts\Daniel\CharakterAnimation.cs" />
      <Compile Include="Assets\Scripts\Daniel\GatlinRotate.cs" />
      <Compile Include="Assets\Scripts\Daniel\Rotatet.cs" />
-     <Compile Include="Assets\Scripts\EnemyAI.cs" />
-     <Compile Include="Assets\Scripts\EnemyStateUI.cs" />
-     <Compile Include="Assets\Scripts\LevelSwitch.cs" />
+     <Compile Include="Assets\Scripts\Julian\DestroyObject.cs" />
+     <Compile Include="Assets\Scripts\Julian\Movement.cs" />
+     <Compile Include="Assets\Scripts\Julian\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Lukas\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Lukas\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\Lukas\GameManager.cs" />
      <Compile Include="Assets\Scripts\Lukas\Health.cs" />
-     <Compile Include="Assets\Scripts\Movement.cs" />
-     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\State.cs" />
-     <Compile Include="Assets\Scripts\StateAggro.cs" />
-     <Compile Include="Assets\Scripts\StateIdle.cs" />
-     <Compile Include="Assets\Scripts\StateNormal.cs" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

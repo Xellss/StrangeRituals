@@ -49,23 +49,34 @@ public class CaracterController : MonoBehaviour
 
     private void Rotate()
     {
-        float y = Input.GetAxis("rotY");
-        float x = Input.GetAxis("rotX");
+        if (UseJoyStick)
+        {
+            float y = Input.GetAxis("rotY");
+            float x = Input.GetAxis("rotX");
 
-        angleBackUp = angle;
-        angle = Mathf.Atan2(y, x) * Mathf.Rad2Deg;
+            angleBackUp = angle;
+            angle = Mathf.Atan2(y, x) * Mathf.Rad2Deg;
 
-        if (angle == angleToAvoid)
-            angle = angleBackUp;
+            if (angle == angleToAvoid)
+                angle = angleBackUp;
 
-        myTransform.rotation = Quaternion.Euler(0, angle + mainCamera.transform.rotation.y + 220, 0);
+            myTransform.rotation = Quaternion.Euler(0, angle + mainCamera.transform.rotation.y + 220, 0);
+        }
+        else
+        {
+
+        }
+        
     }
 
     private void Move()
     {
-        if (MoveOverTransform)
-            myTransform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime * MovementSpeed, 0, Input.GetAxis("Vertical") * Time.deltaTime * MovementSpeed, Space.World);
-        else
-            myRigidBody.AddForce(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * MovementSpeed);
+        if (UseJoyStick)
+        {
+            if (MoveOverTransform)
+                myTransform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime * MovementSpeed, 0, Input.GetAxis("Vertical") * Time.deltaTime * MovementSpeed, Space.World);
+            else
+                myRigidBody.AddForce(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * MovementSpeed);
+        }
     }
 }

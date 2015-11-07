@@ -12,7 +12,6 @@ public class DestroyObject : MonoBehaviour
     {
         bulletSpawn = GameObject.Find("BulletSpawn");
         bulletScript = bulletSpawn.GetComponent<BulletSpawn>();
-
     }
 
     void OnCollisionEnter(Collision other)

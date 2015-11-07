@@ -12,6 +12,7 @@ public class PlayerItems : MonoBehaviour
     public GameObject Item2;
     public GameObject Item3;
 
+    
 
     void OnCollisionEnter(Collision other)
     {

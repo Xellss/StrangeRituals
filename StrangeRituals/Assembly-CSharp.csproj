@@ -45,6 +45,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Navigator.cs" />
      <Compile Include="Assets\OldSchoolPixelFX\Helper Script\Screenshotter.cs" />
      <Compile Include="Assets\Scripts\Daniel\BulletSpawn.cs" />
      <Compile Include="Assets\Scripts\Daniel\CharakterAnimation.cs" />

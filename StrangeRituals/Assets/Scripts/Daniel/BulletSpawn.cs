@@ -10,12 +10,12 @@ public class BulletSpawn : MonoBehaviour {
     public float DelayTime = 0.5f;
     public int MaxBulletAmount = 100;
     public float ReloadTime = 1;
-    
+    public static bool CanShoot = true;
+    public static bool Reload = false;
+
 
     private GameObject newBullet;
     private Rigidbody myRigidbody;
-    private bool canShoot = true;
-    private bool reload = false;
     private int bulletAmount = 0;
 
     void Update()
@@ -27,7 +27,7 @@ public class BulletSpawn : MonoBehaviour {
 
     void bulletSpawn()
     {
-        if (Input.GetButton("Jump") && canShoot && !reload)
+        if (Input.GetButton("Jump") && CanShoot && !Reload)
         {
             newBullet = (GameObject)Instantiate(BulletPrefab,transform.position,Quaternion.identity);
             Rigidbody bulletRig = newBullet.GetComponent<Rigidbody>();
@@ -40,18 +40,18 @@ public class BulletSpawn : MonoBehaviour {
 
     void CooldownWeapon()
     {
-        if (bulletAmount == MaxBulletAmount && !reload)
+        if (bulletAmount == MaxBulletAmount && !Reload)
         {
             StartCoroutine(WeaponCooldown());
         }
     }
     IEnumerator WeaponCooldown()
     {
-        reload = true;
-        canShoot = false;
+        Reload = true;
+        CanShoot = false;
         yield return new WaitForSeconds(ReloadTime);
-        reload = false;
-        canShoot = true;
+        Reload = false;
+        CanShoot = true;
         bulletAmount = 0;
     }
     IEnumerator DestroyAfterLifetime(GameObject mybullet)
@@ -61,9 +61,9 @@ public class BulletSpawn : MonoBehaviour {
     }
     IEnumerator ShootDelay()
     {
-        canShoot = false;
+        CanShoot = false;
         yield return new WaitForSeconds(DelayTime);
-        canShoot = true;
+        CanShoot = true;
     }
 
 

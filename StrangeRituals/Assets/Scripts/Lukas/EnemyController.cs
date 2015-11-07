@@ -48,6 +48,13 @@ public class EnemyController : MonoBehaviour
             if (other.gameObject == Target.gameObject)
                 other.gameObject.GetComponent<Health>().DecreaseHealth(AttackDamage);
         }
+
+        if (other.gameObject.tag == "Bullet")
+        {
+            Health health = GetComponent<Health>();
+            BulletSpawn bullet = other.gameObject.GetComponent<BulletSpawn>();
+            health.DecreaseHealth(bullet.Damage);
+        }
     }
 
     private void FollowPlayer()

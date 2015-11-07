@@ -65,33 +65,16 @@
      <Compile Include="Assets\Scripts\StateIdle.cs" />
      <Compile Include="Assets\Scripts\StateNormal.cs" />
  <Reference Include="UnityEngine.Advertisements">
-<<<<<<< HEAD
  <HintPath>C:/Program Files/Unity/5.2.2f1/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
-=======
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
->>>>>>> 66eafc22cdb633f6e729210cd787a13ede81cca3
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/5.2.2f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
-<<<<<<< HEAD
  <HintPath>C:/Program Files/Unity/5.2.2f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Program Files/Unity/5.2.2f1/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
-=======
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
-<<<<<<< HEAD
-=======
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
->>>>>>> 3fc06aef728240ae988cfe4170f60c552292d878
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
->>>>>>> 66eafc22cdb633f6e729210cd787a13ede81cca3
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/5.2.2f1/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

@@ -1,0 +1,289 @@
+fileFormatVersion: 2
+guid: 57b69c30e8b0f0c4097dfcd94ed86304
+timeCreated: 1446879593
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Biped_rig
+    100002: Character
+    100004: Chest_FK_01_jnt
+    100006: CINEMA_4D_Editor
+    100008: //RootNode
+    100010: Head_00_jnt
+    100012: Head_01_jnt
+    100014: Hip_FK_00_jnt
+    100016: L_FK_Arm_null
+    100018: L_FK_Collar_jnt
+    100020: L_FK_Elbow_jnt
+    100022: L_FK_Hand_con_
+    100024: L_FK_Hand_jnt
+    100026: L_FK_Shoulder_jnt
+    100028: L_Foot_jnt
+    100030: L_Hip_jnt
+    100032: L_Hip_jnt_Pole
+    100034: L_Knee_jnt
+    100036: L_Leg_null
+    100038: L_Leg_pole
+    100040: L_Leg_pole_1
+    100042: L_Leg_pole_2
+    100044: L_Toe_End_jnt
+    100046: L_Toe_jnt
+    100048: Midd_FK_01_jnt
+    100050: Neck_FK_02_jnt
+    100052: Null
+    100054: polySurface18_1
+    100056: R_FK_Arm_null
+    100058: R_FK_Collar_jnt
+    100060: R_FK_Elbow_jnt
+    100062: R_FK_Hand_con_
+    100064: R_FK_Hand_jnt
+    100066: R_FK_Shoulder_jnt
+    100068: R_Foot_jnt
+    100070: R_Hip_jnt
+    100072: R_Hip_jnt_Pole
+    100074: R_Knee_jnt
+    100076: R_Leg_null
+    100078: R_Leg_pole
+    100080: R_Leg_pole_1
+    100082: R_Leg_pole_2
+    100084: R_Toe_End_jnt
+    100086: R_Toe_jnt
+    100088: Root_null_jnt
+    100090: Spine_FK_null
+    100092: Spinetip_FK_03_jnt
+    400000: Biped_rig
+    400002: Character
+    400004: Chest_FK_01_jnt
+    400006: CINEMA_4D_Editor
+    400008: //RootNode
+    400010: Head_00_jnt
+    400012: Head_01_jnt
+    400014: Hip_FK_00_jnt
+    400016: L_FK_Arm_null
+    400018: L_FK_Collar_jnt
+    400020: L_FK_Elbow_jnt
+    400022: L_FK_Hand_con_
+    400024: L_FK_Hand_jnt
+    400026: L_FK_Shoulder_jnt
+    400028: L_Foot_jnt
+    400030: L_Hip_jnt
+    400032: L_Hip_jnt_Pole
+    400034: L_Knee_jnt
+    400036: L_Leg_null
+    400038: L_Leg_pole
+    400040: L_Leg_pole_1
+    400042: L_Leg_pole_2
+    400044: L_Toe_End_jnt
+    400046: L_Toe_jnt
+    400048: Midd_FK_01_jnt
+    400050: Neck_FK_02_jnt
+    400052: Null
+    400054: polySurface18_1
+    400056: R_FK_Arm_null
+    400058: R_FK_Collar_jnt
+    400060: R_FK_Elbow_jnt
+    400062: R_FK_Hand_con_
+    400064: R_FK_Hand_jnt
+    400066: R_FK_Shoulder_jnt
+    400068: R_Foot_jnt
+    400070: R_Hip_jnt
+    400072: R_Hip_jnt_Pole
+    400074: R_Knee_jnt
+    400076: R_Leg_null
+    400078: R_Leg_pole
+    400080: R_Leg_pole_1
+    400082: R_Leg_pole_2
+    400084: R_Toe_End_jnt
+    400086: R_Toe_jnt
+    400088: Root_null_jnt
+    400090: Spine_FK_null
+    400092: Spinetip_FK_03_jnt
+    4300000: polySurface18_1
+    7400000: C4D Animation Take
+    9500000: //RootNode
+    13700000: polySurface18_1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: C4D Animation Take
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Character
+        weight: 1
+      - path: Character/Biped_rig
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt/Chest_FK_01_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt/Chest_FK_01_jnt/L_FK_Arm_null
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt/Chest_FK_01_jnt/L_FK_Arm_null/L_FK_Collar_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt/Chest_FK_01_jnt/L_FK_Arm_null/L_FK_Collar_jnt/L_FK_Shoulder_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt/Chest_FK_01_jnt/L_FK_Arm_null/L_FK_Collar_jnt/L_FK_Shoulder_jnt/L_FK_Elbow_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt/Chest_FK_01_jnt/L_FK_Arm_null/L_FK_Collar_jnt/L_FK_Shoulder_jnt/L_FK_Elbow_jnt/L_FK_Hand_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt/Chest_FK_01_jnt/L_FK_Arm_null/L_FK_Collar_jnt/L_FK_Shoulder_jnt/L_FK_Elbow_jnt/L_FK_Hand_jnt/L_FK_Hand_con_
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt/Chest_FK_01_jnt/Neck_FK_02_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt/Chest_FK_01_jnt/Neck_FK_02_jnt/Spinetip_FK_03_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt/Chest_FK_01_jnt/Neck_FK_02_jnt/Spinetip_FK_03_jnt/Head_00_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt/Chest_FK_01_jnt/Neck_FK_02_jnt/Spinetip_FK_03_jnt/Head_00_jnt/Head_01_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt/Chest_FK_01_jnt/R_FK_Arm_null
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt/Chest_FK_01_jnt/R_FK_Arm_null/R_FK_Collar_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt/Chest_FK_01_jnt/R_FK_Arm_null/R_FK_Collar_jnt/R_FK_Shoulder_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt/Chest_FK_01_jnt/R_FK_Arm_null/R_FK_Collar_jnt/R_FK_Shoulder_jnt/R_FK_Elbow_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt/Chest_FK_01_jnt/R_FK_Arm_null/R_FK_Collar_jnt/R_FK_Shoulder_jnt/R_FK_Elbow_jnt/R_FK_Hand_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/Hip_FK_00_jnt/Midd_FK_01_jnt/Chest_FK_01_jnt/R_FK_Arm_null/R_FK_Collar_jnt/R_FK_Shoulder_jnt/R_FK_Elbow_jnt/R_FK_Hand_jnt/R_FK_Hand_con_
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/L_Leg_null
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/L_Leg_null/L_Hip_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/L_Leg_null/L_Hip_jnt/L_Knee_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/L_Leg_null/L_Hip_jnt/L_Knee_jnt/L_Foot_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/L_Leg_null/L_Hip_jnt/L_Knee_jnt/L_Foot_jnt/L_Toe_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/L_Leg_null/L_Hip_jnt/L_Knee_jnt/L_Foot_jnt/L_Toe_jnt/L_Toe_End_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/L_Leg_null/L_Leg_pole
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/L_Leg_null/L_Leg_pole/L_Hip_jnt_Pole
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/L_Leg_null/L_Leg_pole/L_Leg_pole_1
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/L_Leg_null/L_Leg_pole/L_Leg_pole_2
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/R_Leg_null
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/R_Leg_null/R_Hip_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/R_Leg_null/R_Hip_jnt/R_Knee_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/R_Leg_null/R_Hip_jnt/R_Knee_jnt/R_Foot_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/R_Leg_null/R_Hip_jnt/R_Knee_jnt/R_Foot_jnt/R_Toe_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/R_Leg_null/R_Hip_jnt/R_Knee_jnt/R_Foot_jnt/R_Toe_jnt/R_Toe_End_jnt
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/R_Leg_null/R_Leg_pole
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/R_Leg_null/R_Leg_pole/R_Hip_jnt_Pole
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/R_Leg_null/R_Leg_pole/R_Leg_pole_1
+        weight: 1
+      - path: Character/Biped_rig/Root_null_jnt/Spine_FK_null/R_Leg_null/R_Leg_pole/R_Leg_pole_2
+        weight: 1
+      - path: CINEMA_4D_Editor
+        weight: 1
+      - path: Null
+        weight: 1
+      - path: Null/polySurface18_1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 12
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

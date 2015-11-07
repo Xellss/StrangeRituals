@@ -5,11 +5,13 @@ using System.Collections;
 [RequireComponent(typeof(CapsuleCollider))]
 public class EnemyController : MonoBehaviour 
 {
-    public Transform Target;
+    public GameObject BloodOnDeathToInit;
     public float Speed = 0.5f;
     public float RotationSpeed = 1;
     public int AttackDamage = 20;
 
+    private GameManager GameManagerObject;
+    private Transform Target;
     private ParticleSystem BloodParticle;
     private Transform myTransform;
     private Rigidbody myRigidBody;
@@ -29,6 +31,9 @@ public class EnemyController : MonoBehaviour
 
     void Start()
     {
+        GameObject GamemanagerGameObject = GameObject.Find("Gamemanager");
+        GameManagerObject = GamemanagerGameObject.GetComponent<GameManager>();
+
         GameObject TargetGameobject = GameObject.Find("Player");
         Target = TargetGameobject.GetComponent<Transform>();
         myRigidBody.drag = 15;
@@ -36,7 +41,8 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
-        FollowPlayer();
+        if (!GameManagerObject.Pause)
+            FollowPlayer();
     }
 
     void OnCollisionEnter(Collision other)
@@ -57,6 +63,9 @@ public class EnemyController : MonoBehaviour
             GameObject otherGameObject = other.gameObject;
             Bullet otherBullet = otherGameObject.GetComponentInChildren<Bullet>();
             myHealth.DecreaseHealth(otherBullet.Damage);
+
+            if (myHealth.HealthPoints <= 0)
+                Instantiate(BloodOnDeathToInit, myTransform.position, Quaternion.identity);
         }
     }
 

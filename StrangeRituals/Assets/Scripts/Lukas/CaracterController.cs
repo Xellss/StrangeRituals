@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CaracterController : MonoBehaviour 
 {
+    public GameManager GameManager;
     public bool MoveOverTransform = false;
     public bool UseJoyStick = true;
     public bool GodMode = false;
@@ -19,6 +20,8 @@ public class CaracterController : MonoBehaviour
     private float angleBackUp;
     private float angle;
 
+    private float camDistance;
+
     void Awake()
     {
         mainCamera = Camera.main;
@@ -31,8 +34,11 @@ public class CaracterController : MonoBehaviour
 
     void Update()
     {
-        Move();
-        Rotate();
+        if (!GameManager.Pause)
+        {
+            Move();
+            Rotate();
+        }
     }
 
     void OnCollisionEnter(Collision other)
@@ -64,19 +70,22 @@ public class CaracterController : MonoBehaviour
         }
         else
         {
+            camDistance = mainCamera.transform.position.y - myTransform.position.y;
 
+            Vector3 target = mainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, camDistance));
+
+            float angleRad = Mathf.Atan2(target.y - myTransform.position.y, target.x - myTransform.position.x);
+            float angle = (180 / Mathf.PI) * angleRad - 90;
+
+            myRigidBody.rotation = new Quaternion(0, angle, 0, 0);
         }
-        
     }
 
     private void Move()
     {
-        if (UseJoyStick)
-        {
             if (MoveOverTransform)
                 myTransform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime * MovementSpeed, 0, Input.GetAxis("Vertical") * Time.deltaTime * MovementSpeed, Space.World);
             else
                 myRigidBody.AddForce(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * MovementSpeed);
-        }
     }
 }

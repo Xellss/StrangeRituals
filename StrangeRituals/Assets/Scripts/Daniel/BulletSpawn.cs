@@ -12,7 +12,6 @@ public class BulletSpawn : MonoBehaviour {
     public float ReloadTime = 1;
     public static bool CanShoot = true;
     public static bool Reload = false;
-    public int Damage = 51;
 
     private GameObject newBullet;
     private Rigidbody myRigidbody;

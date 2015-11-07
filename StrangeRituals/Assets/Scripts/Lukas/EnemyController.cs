@@ -50,7 +50,6 @@ public class EnemyController : MonoBehaviour
 
         if (other.gameObject.tag == "Bullet")
         {
-            print("Hit");
             Bullet bullet = other.gameObject.GetComponent<Bullet>();
             myHealth.HealthPoints -= bullet.Damage;
         }

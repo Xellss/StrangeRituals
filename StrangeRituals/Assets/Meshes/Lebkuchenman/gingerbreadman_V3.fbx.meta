@@ -1,6 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 31a9ee53d4ff72a4d8838a47a93762e3
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
 guid: 445073886be56854d826099d20dcef83
@@ -26,6 +27,7 @@ licenseType: Free
 >>>>>>> 86a8a520151869be462f6bfee55eff2b7cc2e7b2
 >>>>>>> 319ff26ef7e0bb2801add345f09071bbdb972355
 >>>>>>> 4262fc93aa067d0c0389949b54d14bfc5eff4781
+>>>>>>> 906d4583d2a6037c1110f6c3cbaa406371e1dcab
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
@@ -271,6 +273,9 @@ ModelImporter:
 <<<<<<< HEAD
     globalScale: 0
 =======
+<<<<<<< HEAD
+    globalScale: 0
+=======
     globalScale: 180
 <<<<<<< HEAD
 =======
@@ -288,6 +293,7 @@ ModelImporter:
 >>>>>>> 86a8a520151869be462f6bfee55eff2b7cc2e7b2
 >>>>>>> 319ff26ef7e0bb2801add345f09071bbdb972355
 >>>>>>> 4262fc93aa067d0c0389949b54d14bfc5eff4781
+>>>>>>> 906d4583d2a6037c1110f6c3cbaa406371e1dcab
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

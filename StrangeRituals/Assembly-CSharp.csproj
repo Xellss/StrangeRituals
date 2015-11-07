@@ -54,10 +54,13 @@
      <Compile Include="Assets\Scripts\Julian\Movement.cs" />
      <Compile Include="Assets\Scripts\Julian\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Lukas\Bullet.cs" />
+     <Compile Include="Assets\Scripts\Lukas\CameraFollowObject.cs" />
      <Compile Include="Assets\Scripts\Lukas\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Lukas\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\Lukas\GameManager.cs" />
      <Compile Include="Assets\Scripts\Lukas\Health.cs" />
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -85,10 +88,15 @@
 >>>>>>> 86a8a520151869be462f6bfee55eff2b7cc2e7b2
 >>>>>>> 319ff26ef7e0bb2801add345f09071bbdb972355
 >>>>>>> 4262fc93aa067d0c0389949b54d14bfc5eff4781
+>>>>>>> 906d4583d2a6037c1110f6c3cbaa406371e1dcab
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
+<<<<<<< HEAD
+ <HintPath>C:/Program Files/Unity/5.2.2f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+=======
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
 <<<<<<< HEAD
@@ -110,6 +118,7 @@
 >>>>>>> 86a8a520151869be462f6bfee55eff2b7cc2e7b2
 >>>>>>> 319ff26ef7e0bb2801add345f09071bbdb972355
 >>>>>>> 4262fc93aa067d0c0389949b54d14bfc5eff4781
+>>>>>>> 906d4583d2a6037c1110f6c3cbaa406371e1dcab
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
  </Reference>

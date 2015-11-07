@@ -1,0 +1,196 @@
+fileFormatVersion: 2
+guid: 509c4eb33254c9145a4eba9737081b9f
+timeCreated: 1446930184
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Ammo
+    100002: Cloner
+    100004: Cube
+    100006: Cylinder_1
+    100008: Cylinder_1_0
+    100010: Cylinder_1_1
+    100012: Cylinder_1_2
+    100014: Cylinder_1_3
+    100016: Cylinder_1_4
+    100018: Cylinder_1_5
+    100020: Cylinder_1_6
+    100022: "Fl\xFCgel_1"
+    100024: Girl_Mesh
+    100026: Gun_Body
+    100028: Hair
+    100030: Head
+    100032: Head_Tip
+    100034: //RootNode
+    100036: Hip
+    100038: Joint
+    100040: Joint_1
+    100042: Kleid_1
+    100044: L_Hand
+    100046: L_HandTip
+    100048: L_Lower
+    100050: L_Upper
+    100052: MiniGun
+    100054: Muzzle_1
+    100056: Muzzle_2
+    100058: R_Hand
+    100060: R_HandTip
+    100062: R_Lower
+    100064: R_Upper
+    100066: Rig
+    100068: Rock
+    100070: Skin
+    100072: Torus
+    400000: Ammo
+    400002: Cloner
+    400004: Cube
+    400006: Cylinder_1
+    400008: Cylinder_1_0
+    400010: Cylinder_1_1
+    400012: Cylinder_1_2
+    400014: Cylinder_1_3
+    400016: Cylinder_1_4
+    400018: Cylinder_1_5
+    400020: Cylinder_1_6
+    400022: "Fl\xFCgel_1"
+    400024: Girl_Mesh
+    400026: Gun_Body
+    400028: Hair
+    400030: Head
+    400032: Head_Tip
+    400034: //RootNode
+    400036: Hip
+    400038: Joint
+    400040: Joint_1
+    400042: Kleid_1
+    400044: L_Hand
+    400046: L_HandTip
+    400048: L_Lower
+    400050: L_Upper
+    400052: MiniGun
+    400054: Muzzle_1
+    400056: Muzzle_2
+    400058: R_Hand
+    400060: R_HandTip
+    400062: R_Lower
+    400064: R_Upper
+    400066: Rig
+    400068: Rock
+    400070: Skin
+    400072: Torus
+    2300000: Ammo
+    2300002: Cube
+    2300004: Cylinder_1
+    2300006: Cylinder_1_0
+    2300008: Cylinder_1_1
+    2300010: Cylinder_1_2
+    2300012: Cylinder_1_3
+    2300014: Cylinder_1_4
+    2300016: Cylinder_1_5
+    2300018: Cylinder_1_6
+    2300020: Gun_Body
+    2300022: Muzzle_1
+    2300024: Muzzle_2
+    3300000: Ammo
+    3300002: Cube
+    3300004: Cylinder_1
+    3300006: Cylinder_1_0
+    3300008: Cylinder_1_1
+    3300010: Cylinder_1_2
+    3300012: Cylinder_1_3
+    3300014: Cylinder_1_4
+    3300016: Cylinder_1_5
+    3300018: Cylinder_1_6
+    3300020: Gun_Body
+    3300022: Muzzle_1
+    3300024: Muzzle_2
+    4300000: Cube
+    4300002: Ammo
+    4300004: Cylinder_1
+    4300006: Cylinder_1_0
+    4300008: Cylinder_1_1
+    4300010: Cylinder_1_2
+    4300012: Cylinder_1_3
+    4300014: Cylinder_1_4
+    4300016: Cylinder_1_5
+    4300018: Cylinder_1_6
+    4300020: Muzzle_1
+    4300022: Muzzle_2
+    4300024: Gun_Body
+    4300026: "Fl\xFCgel_1"
+    4300028: Kleid_1
+    4300030: Hair
+    4300032: Skin
+    4300034: Torus
+    7400000: Main
+    9500000: //RootNode
+    13700000: "Fl\xFCgel_1"
+    13700002: Hair
+    13700004: Kleid_1
+    13700006: Skin
+    13700008: Torus
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 8
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

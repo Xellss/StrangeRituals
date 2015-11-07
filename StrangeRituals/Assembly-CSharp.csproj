@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\LevelSwitch.cs" />
      <Compile Include="Assets\Scripts\Lukas\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Lukas\EnemySpawner.cs" />
+     <Compile Include="Assets\Scripts\Lukas\GameManager.cs" />
      <Compile Include="Assets\Scripts\Lukas\Health.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />

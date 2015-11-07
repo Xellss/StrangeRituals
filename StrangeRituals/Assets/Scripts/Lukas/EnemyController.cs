@@ -8,11 +8,14 @@ public class EnemyController : MonoBehaviour
     public Transform Target;
     public float Speed = 0.5f;
     public float RotationSpeed = 1;
+    public int AttackDamage = 20;
 
     private Transform myTransform;
     private Rigidbody myRigidBody;
 
     private float rotation;
+    private float attackTimer;
+    private float attackDelay = 500;
 
     void Awake()
     {
@@ -30,6 +33,21 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         FollowPlayer();
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        attackTimer += Time.deltaTime;
+        if (attackTimer <= attackDelay)
+        {
+            attackTimer = 0;
+
+            if (other.gameObject.GetComponent<Health>() == null)
+                return;
+
+            if (other.gameObject == Target.gameObject)
+                other.gameObject.GetComponent<Health>().DecreaseHealth(AttackDamage);
+        }
     }
 
     private void FollowPlayer()

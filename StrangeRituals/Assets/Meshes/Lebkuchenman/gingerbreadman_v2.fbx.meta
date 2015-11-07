@@ -67,6 +67,16 @@ ModelImporter:
     100118: transform7
     100120: transform8
     100122: transform9
+    100124: polySurface30
+    100126: polySurface31
+    100128: polySurface32
+    100130: polySurface33
+    100132: polySurface34
+    100134: polySurface35
+    100136: polySurface36
+    100138: polySurface37
+    100140: polySurface38
+    100142: transform31
     400000: //RootNode
     400002: pCube2
     400004: pCube3
@@ -129,9 +139,46 @@ ModelImporter:
     400118: transform7
     400120: transform8
     400122: transform9
+    400124: polySurface30
+    400126: polySurface31
+    400128: polySurface32
+    400130: polySurface33
+    400132: polySurface34
+    400134: polySurface35
+    400136: polySurface36
+    400138: polySurface37
+    400140: polySurface38
+    400142: transform31
     2300000: polySurface21
+    2300002: polySurface30
+    2300004: polySurface31
+    2300006: polySurface32
+    2300008: polySurface33
+    2300010: polySurface34
+    2300012: polySurface35
+    2300014: polySurface36
+    2300016: polySurface37
+    2300018: polySurface38
     3300000: polySurface21
+    3300002: polySurface30
+    3300004: polySurface31
+    3300006: polySurface32
+    3300008: polySurface33
+    3300010: polySurface34
+    3300012: polySurface35
+    3300014: polySurface36
+    3300016: polySurface37
+    3300018: polySurface38
     4300000: polySurface21
+    4300002: polySurface30
+    4300004: polySurface31
+    4300006: polySurface32
+    4300008: polySurface33
+    4300010: polySurface34
+    4300012: polySurface35
+    4300014: polySurface36
+    4300016: polySurface37
+    4300018: polySurface38
     9500000: //RootNode
   materials:
     importMaterials: 1

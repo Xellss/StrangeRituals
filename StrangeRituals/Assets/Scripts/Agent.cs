@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Agent : MonoBehaviour
+public class Agent : MonoBehaviour //MonoBehaviour
 {
 #pragma warning disable 0108
     [SerializeField]

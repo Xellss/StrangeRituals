@@ -14,7 +14,7 @@ public class EnemyStateUI : MonoBehaviour
         text = gameObject.GetComponent<Text>();
         enemyAI = gameObject.GetComponentInParent<EnemyAI>();
         agent = gameObject.GetComponentInParent<Agent>();
-
+        
         text.text = "Idle... ";
     }
 

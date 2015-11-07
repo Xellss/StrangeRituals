@@ -7,6 +7,13 @@ public class GameManager : MonoBehaviour
     public bool Pause = false;
     public int CurrentStage = 1;
 
+    [HideInInspector]
+    public bool Level_1;
+    [HideInInspector]
+    public bool Level_2;
+    [HideInInspector]
+    public bool Level_3;
+
     private bool canPress = true;
 
     void Update()

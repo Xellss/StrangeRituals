@@ -47,7 +47,6 @@
   <ItemGroup>
      <Compile Include="Assets\CollectItem.cs" />
      <Compile Include="Assets\OldSchoolPixelFX\Helper Script\Screenshotter.cs" />
-     <Compile Include="Assets\PlayerItems.cs" />
      <Compile Include="Assets\Scripts\Daniel\BulletSpawn.cs" />
      <Compile Include="Assets\Scripts\Daniel\CharakterAnimation.cs" />
      <Compile Include="Assets\Scripts\Daniel\GatlinRotate.cs" />
@@ -55,6 +54,7 @@
      <Compile Include="Assets\Scripts\Daniel\Rotatet.cs" />
      <Compile Include="Assets\Scripts\Julian\DestroyObject.cs" />
      <Compile Include="Assets\Scripts\Julian\Movement.cs" />
+     <Compile Include="Assets\Scripts\Julian\PlayerItems.cs" />
      <Compile Include="Assets\Scripts\Julian\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Lukas\Bullet.cs" />
      <Compile Include="Assets\Scripts\Lukas\CameraFollowObject.cs" />

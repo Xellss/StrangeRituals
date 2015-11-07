@@ -53,57 +53,17 @@
      <Compile Include="Assets\Scripts\Julian\Movement.cs" />
      <Compile Include="Assets\Scripts\Julian\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Lukas\Bullet.cs" />
+     <Compile Include="Assets\Scripts\Lukas\CameraFollowObject.cs" />
      <Compile Include="Assets\Scripts\Lukas\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Lukas\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\Lukas\GameManager.cs" />
      <Compile Include="Assets\Scripts\Lukas\Health.cs" />
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
-=======
-<<<<<<< HEAD
-     <Compile Include="Assets\Scripts\Movement.cs" />
-     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\State.cs" />
-     <Compile Include="Assets\Scripts\StateAggro.cs" />
-     <Compile Include="Assets\Scripts\StateIdle.cs" />
-     <Compile Include="Assets\Scripts\StateNormal.cs" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/5.2.2f1/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
-=======
->>>>>>> 0054358d15d5eda617b853d5b5c9c21c3cc8c09e
->>>>>>> e9edaf37670614d1cd98f77301ed2068da9e4f67
->>>>>>> 86a8a520151869be462f6bfee55eff2b7cc2e7b2
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/5.2.2f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
-<<<<<<< HEAD
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
-=======
-<<<<<<< HEAD
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
-=======
  <HintPath>C:/Program Files/Unity/5.2.2f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> c4effa41e9aa5a1c92d199cb6001921e5e7af800
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/5.2.2f1/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
->>>>>>> e9edaf37670614d1cd98f77301ed2068da9e4f67
- </Reference>
->>>>>>> 86a8a520151869be462f6bfee55eff2b7cc2e7b2
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/5.2.2f1/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
  </Reference>

@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour 
 {
+    public int WaveCountdown = 60;
     public bool Pause = false;
     public int CurrentStage = 1;
 

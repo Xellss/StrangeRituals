@@ -2,16 +2,10 @@
 using System.Collections;
 
 public class Rotatet : MonoBehaviour {
+    public float RotateSpeed = 1;
 
-    Rigidbody myRigid;
-	
-    void Awake()
-    {
-        myRigid = GetComponent<Rigidbody>();
-    }
 	void Update () 
     {
-        transform.Rotate(0, Input.GetAxis("Mouse X"), 0);
-        //myRigid.rotation = transform.rotation;
+        transform.Rotate(0, Input.GetAxis("Mouse X") * RotateSpeed, 0);
 	}
 }

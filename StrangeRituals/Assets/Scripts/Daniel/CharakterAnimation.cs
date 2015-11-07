@@ -21,7 +21,7 @@ public class CharakterAnimation : MonoBehaviour {
 	
 	void Update () 
     {
-        if (Input.GetButton("Jump"))
+        if (Input.GetButton("Jump") && BulletSpawn.CanShoot && !BulletSpawn.Reload)
         {
             myAnimator.Play("Shoot");
             Fire1R.enabled = true;

@@ -12,6 +12,7 @@ public class EnemyController : MonoBehaviour
 
     private Transform myTransform;
     private Rigidbody myRigidBody;
+    private Health myHealth;
 
     private float rotation;
     private float attackTimer;
@@ -21,6 +22,7 @@ public class EnemyController : MonoBehaviour
     {
         myTransform = GetComponent<Transform>();
         myRigidBody = GetComponent<Rigidbody>();
+        myHealth = GetComponent<Health>();
     }
 
     void Start()
@@ -42,11 +44,15 @@ public class EnemyController : MonoBehaviour
         {
             attackTimer = 0;
 
-            if (other.gameObject.GetComponent<Health>() == null)
-                return;
-
             if (other.gameObject == Target.gameObject)
                 other.gameObject.GetComponent<Health>().DecreaseHealth(AttackDamage);
+        }
+
+        if (other.gameObject.tag == "Bullet")
+        {
+            print("Hit");
+            Bullet bullet = other.gameObject.GetComponent<Bullet>();
+            myHealth.HealthPoints -= bullet.Damage;
         }
     }
 

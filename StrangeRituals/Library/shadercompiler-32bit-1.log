@@ -1,5 +1,33 @@
 <<<<<<< HEAD
 Base path: C:/Program Files/Unity/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-5584
+=======
+<<<<<<< HEAD
+Base path: C:/Program Files/Unity/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-5336
+=======
+Base path: C:/Program Files/Unity/5.2.2f1/Editor/Data
+<<<<<<< HEAD
+Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-3312
+=======
+Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-6304
+=======
+Base path: C:/Program Files/Unity/Editor/Data
+<<<<<<< HEAD
+Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-2520
+=======
+<<<<<<< HEAD
+Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-4112
+=======
+<<<<<<< HEAD
+Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-2288
+=======
+<<<<<<< HEAD
+Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-6164
+=======
+<<<<<<< HEAD
+Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-7028
+=======
 Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-1592
 =======
 <<<<<<< HEAD
@@ -7,6 +35,9 @@ Base path: C:/Program Files/Unity/5.2.2f1/Editor/Data
 Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-4476
 =======
 Base path: C:/Program Files/Unity/Editor/Data
+<<<<<<< HEAD
+Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-1152
+=======
 <<<<<<< HEAD
 Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-7104
 =======
@@ -27,8 +58,18 @@ Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-4748
 >>>>>>> fa846fed68f9e67e2a708af1a1e73d96a440390b
 >>>>>>> dbd88becf800c728f0525aaa115f4749c7782374
 >>>>>>> 310b7002b61689ec08a038598bac88a057a58c82
+>>>>>>> cb38b7913dd6af3bc0637c7cd4e317bf74d551ea
+>>>>>>> 2fca85aaf85e6ef590684c9ba4c42c086785b690
+>>>>>>> 3fc06aef728240ae988cfe4170f60c552292d878
+>>>>>>> 66eafc22cdb633f6e729210cd787a13ede81cca3
+>>>>>>> 0054358d15d5eda617b853d5b5c9c21c3cc8c09e
+>>>>>>> c4effa41e9aa5a1c92d199cb6001921e5e7af800
+>>>>>>> e9edaf37670614d1cd98f77301ed2068da9e4f67
+>>>>>>> 86a8a520151869be462f6bfee55eff2b7cc2e7b2
+>>>>>>> 319ff26ef7e0bb2801add345f09071bbdb972355
+>>>>>>> 4262fc93aa067d0c0389949b54d14bfc5eff4781
 Cmd: getPlatforms
-Unhandled exception: Readfile from pipe failed. GLE=The pipe has been ended.
+Unhandled exception: Readfile from pipe failed. GLE=Die Pipe wurde beendet.
 
 
 Quitting shader compiler process

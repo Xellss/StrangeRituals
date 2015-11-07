@@ -6,6 +6,7 @@ using System.Collections;
 public class EnemyController : MonoBehaviour 
 {
     public Transform Target;
+    public ParticleSystem BloodParticle;
     public float Speed = 0.5f;
     public float RotationSpeed = 1;
     public int AttackDamage = 20;
@@ -23,6 +24,7 @@ public class EnemyController : MonoBehaviour
         myTransform = GetComponent<Transform>();
         myRigidBody = GetComponent<Rigidbody>();
         myHealth = GetComponent<Health>();
+        BloodParticle = GetComponent<ParticleSystem>();
     }
 
     void Start()
@@ -35,6 +37,7 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         FollowPlayer();
+        print(BloodParticle.isPlaying);
     }
 
     void OnCollisionEnter(Collision other)
@@ -50,8 +53,11 @@ public class EnemyController : MonoBehaviour
 
         if (other.gameObject.tag == "Bullet")
         {
-            Bullet bullet = other.gameObject.GetComponent<Bullet>();
-            myHealth.HealthPoints -= bullet.Damage;
+            BloodParticle.Play();
+
+            GameObject otherGameObject = other.gameObject;
+            Bullet otherBullet = otherGameObject.GetComponent<Bullet>();
+            myHealth.DecreaseHealth(otherBullet.Damage);
         }
     }
 

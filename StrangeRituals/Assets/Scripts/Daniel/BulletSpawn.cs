@@ -25,14 +25,17 @@ public class BulletSpawn : MonoBehaviour {
 
     void bulletSpawn()
     {
-        if (Input.GetButton("Jump") && CanShoot && !Reload)
+        if (CanShoot && !Reload)
         {
-            newBullet = (GameObject)Instantiate(BulletPrefab,transform.position,Quaternion.identity);
-            Rigidbody bulletRig = newBullet.GetComponent<Rigidbody>();
-            bulletRig.AddRelativeForce(Player.transform.forward * BulletForce);
-            bulletAmount++;
-            StartCoroutine(DestroyAfterLifetime(newBullet));
-            StartCoroutine(ShootDelay());
+            if (Input.GetAxis("Shoot") > 0.1f)
+            {
+                newBullet = (GameObject)Instantiate(BulletPrefab, transform.position, Quaternion.identity);
+                Rigidbody bulletRig = newBullet.GetComponent<Rigidbody>();
+                bulletRig.AddRelativeForce(Player.transform.forward * BulletForce);
+                bulletAmount++;
+                StartCoroutine(DestroyAfterLifetime(newBullet));
+                StartCoroutine(ShootDelay());
+            }
         }
     }
 

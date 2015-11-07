@@ -1,6 +1,16 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 5d200c7871d51da4582c7e2f1912f0ea
+timeCreated: 1446867466
+=======
+<<<<<<< HEAD
+guid: 0c8969d81408cae46abfe5d759ffa8eb
+timeCreated: 1446860066
+=======
 guid: 48b63ed0290035748bd09dafa9934ebb
 timeCreated: 1446863896
+>>>>>>> dbd88becf800c728f0525aaa115f4749c7782374
+>>>>>>> 310b7002b61689ec08a038598bac88a057a58c82
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -33,6 +43,55 @@ ModelImporter:
     100050: polySurface29
     100052: polySurface3
     100054: polySurface3 1
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    100056: polySurface6
+    100058: polySurface7
+    100060: polySurface8
+    100062: polySurface9
+    100064: transform1
+    100066: transform10
+    100068: transform11
+    100070: transform12
+    100072: transform13
+    100074: transform14
+    100076: transform15
+    100078: transform16
+    100080: transform17
+    100082: transform18
+    100084: transform19
+    100086: transform2
+    100088: transform20
+    100090: transform21
+    100092: transform22
+    100094: transform23
+    100096: transform24
+    100098: transform25
+    100100: transform26
+    100102: transform27
+    100104: transform28
+    100106: transform29
+    100108: transform3
+    100110: transform30
+    100112: transform4
+    100114: transform5
+    100116: transform6
+    100118: transform7
+    100120: transform8
+    100122: transform9
+    100124: polySurface30
+    100126: polySurface31
+    100128: polySurface32
+    100130: polySurface33
+    100132: polySurface34
+    100134: polySurface35
+    100136: polySurface36
+    100138: polySurface37
+    100140: polySurface38
+    100142: transform31
+=======
+>>>>>>> 310b7002b61689ec08a038598bac88a057a58c82
     100056: polySurface30
     100058: polySurface31
     100060: polySurface32
@@ -77,6 +136,10 @@ ModelImporter:
     100138: transform7
     100140: transform8
     100142: transform9
+<<<<<<< HEAD
+=======
+>>>>>>> dbd88becf800c728f0525aaa115f4749c7782374
+>>>>>>> 310b7002b61689ec08a038598bac88a057a58c82
     400000: //RootNode
     400002: pCube2
     400004: pCube3
@@ -105,6 +168,85 @@ ModelImporter:
     400050: polySurface29
     400052: polySurface3
     400054: polySurface3 1
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    400056: polySurface6
+    400058: polySurface7
+    400060: polySurface8
+    400062: polySurface9
+    400064: transform1
+    400066: transform10
+    400068: transform11
+    400070: transform12
+    400072: transform13
+    400074: transform14
+    400076: transform15
+    400078: transform16
+    400080: transform17
+    400082: transform18
+    400084: transform19
+    400086: transform2
+    400088: transform20
+    400090: transform21
+    400092: transform22
+    400094: transform23
+    400096: transform24
+    400098: transform25
+    400100: transform26
+    400102: transform27
+    400104: transform28
+    400106: transform29
+    400108: transform3
+    400110: transform30
+    400112: transform4
+    400114: transform5
+    400116: transform6
+    400118: transform7
+    400120: transform8
+    400122: transform9
+    400124: polySurface30
+    400126: polySurface31
+    400128: polySurface32
+    400130: polySurface33
+    400132: polySurface34
+    400134: polySurface35
+    400136: polySurface36
+    400138: polySurface37
+    400140: polySurface38
+    400142: transform31
+    2300000: polySurface21
+    2300002: polySurface30
+    2300004: polySurface31
+    2300006: polySurface32
+    2300008: polySurface33
+    2300010: polySurface34
+    2300012: polySurface35
+    2300014: polySurface36
+    2300016: polySurface37
+    2300018: polySurface38
+    3300000: polySurface21
+    3300002: polySurface30
+    3300004: polySurface31
+    3300006: polySurface32
+    3300008: polySurface33
+    3300010: polySurface34
+    3300012: polySurface35
+    3300014: polySurface36
+    3300016: polySurface37
+    3300018: polySurface38
+    4300000: polySurface21
+    4300002: polySurface30
+    4300004: polySurface31
+    4300006: polySurface32
+    4300008: polySurface33
+    4300010: polySurface34
+    4300012: polySurface35
+    4300014: polySurface36
+    4300016: polySurface37
+    4300018: polySurface38
+=======
+>>>>>>> 310b7002b61689ec08a038598bac88a057a58c82
     400056: polySurface30
     400058: polySurface31
     400060: polySurface32
@@ -176,6 +318,10 @@ ModelImporter:
     4300012: polySurface36
     4300014: polySurface37
     4300016: polySurface38
+<<<<<<< HEAD
+=======
+>>>>>>> dbd88becf800c728f0525aaa115f4749c7782374
+>>>>>>> 310b7002b61689ec08a038598bac88a057a58c82
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -200,7 +346,15 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
+<<<<<<< HEAD
     globalScale: 1
+=======
+<<<<<<< HEAD
+    globalScale: 100
+=======
+    globalScale: 1
+>>>>>>> dbd88becf800c728f0525aaa115f4749c7782374
+>>>>>>> 310b7002b61689ec08a038598bac88a057a58c82
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

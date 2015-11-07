@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 31a9ee53d4ff72a4d8838a47a93762e3
 timeCreated: 1446865908
+=======
+guid: c9932f9ee56f88941afd16dabe266ab6
+timeCreated: 1446863897
+>>>>>>> dbd88becf800c728f0525aaa115f4749c7782374
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -29,6 +34,7 @@ ModelImporter:
     100042: polySurface15
     100044: polySurface16
     100046: polySurface17
+<<<<<<< HEAD
     100048: polySurface2
     100050: polySurface3
     100052: polySurface3 1
@@ -87,6 +93,66 @@ ModelImporter:
     100158: polySurface31
     100160: polySurface32
     100162: transform33
+=======
+    100048: polySurface18
+    100050: polySurface19
+    100052: polySurface2
+    100054: polySurface20
+    100056: polySurface21
+    100058: polySurface22
+    100060: polySurface23
+    100062: polySurface24
+    100064: polySurface25
+    100066: polySurface26
+    100068: polySurface27
+    100070: polySurface28
+    100072: polySurface29
+    100074: polySurface3
+    100076: polySurface3 1
+    100078: polySurface30
+    100080: polySurface31
+    100082: polySurface32
+    100084: polySurface4
+    100086: polySurface5
+    100088: polySurface6
+    100090: polySurface7
+    100092: polySurface8
+    100094: polySurface9
+    100096: pTorus1
+    100098: transform1
+    100100: transform10
+    100102: transform11
+    100104: transform12
+    100106: transform13
+    100108: transform14
+    100110: transform15
+    100112: transform16
+    100114: transform17
+    100116: transform18
+    100118: transform19
+    100120: transform2
+    100122: transform20
+    100124: transform21
+    100126: transform22
+    100128: transform23
+    100130: transform24
+    100132: transform25
+    100134: transform26
+    100136: transform27
+    100138: transform28
+    100140: transform29
+    100142: transform3
+    100144: transform30
+    100146: transform31
+    100148: transform32
+    100150: transform33
+    100152: transform4
+    100154: transform5
+    100156: transform6
+    100158: transform7
+    100160: transform8
+    100162: transform9
+>>>>>>> dbd88becf800c728f0525aaa115f4749c7782374
     400000: //RootNode
     400002: pCube1
     400004: pCube10
@@ -111,6 +177,7 @@ ModelImporter:
     400042: polySurface15
     400044: polySurface16
     400046: polySurface17
+<<<<<<< HEAD
     400048: polySurface2
     400050: polySurface3
     400052: polySurface3 1
@@ -217,6 +284,111 @@ ModelImporter:
     4300026: polySurface30
     4300028: polySurface31
     4300030: polySurface32
+=======
+    400048: polySurface18
+    400050: polySurface19
+    400052: polySurface2
+    400054: polySurface20
+    400056: polySurface21
+    400058: polySurface22
+    400060: polySurface23
+    400062: polySurface24
+    400064: polySurface25
+    400066: polySurface26
+    400068: polySurface27
+    400070: polySurface28
+    400072: polySurface29
+    400074: polySurface3
+    400076: polySurface3 1
+    400078: polySurface30
+    400080: polySurface31
+    400082: polySurface32
+    400084: polySurface4
+    400086: polySurface5
+    400088: polySurface6
+    400090: polySurface7
+    400092: polySurface8
+    400094: polySurface9
+    400096: pTorus1
+    400098: transform1
+    400100: transform10
+    400102: transform11
+    400104: transform12
+    400106: transform13
+    400108: transform14
+    400110: transform15
+    400112: transform16
+    400114: transform17
+    400116: transform18
+    400118: transform19
+    400120: transform2
+    400122: transform20
+    400124: transform21
+    400126: transform22
+    400128: transform23
+    400130: transform24
+    400132: transform25
+    400134: transform26
+    400136: transform27
+    400138: transform28
+    400140: transform29
+    400142: transform3
+    400144: transform30
+    400146: transform31
+    400148: transform32
+    400150: transform33
+    400152: transform4
+    400154: transform5
+    400156: transform6
+    400158: transform7
+    400160: transform8
+    400162: transform9
+    2300000: polySurface18
+    2300002: polySurface19
+    2300004: polySurface20
+    2300006: polySurface21
+    2300008: polySurface22
+    2300010: polySurface23
+    2300012: polySurface24
+    2300014: polySurface25
+    2300016: polySurface26
+    2300018: polySurface27
+    2300020: polySurface28
+    2300022: polySurface29
+    2300024: polySurface30
+    2300026: polySurface31
+    2300028: polySurface32
+    3300000: polySurface18
+    3300002: polySurface19
+    3300004: polySurface20
+    3300006: polySurface21
+    3300008: polySurface22
+    3300010: polySurface23
+    3300012: polySurface24
+    3300014: polySurface25
+    3300016: polySurface26
+    3300018: polySurface27
+    3300020: polySurface28
+    3300022: polySurface29
+    3300024: polySurface30
+    3300026: polySurface31
+    3300028: polySurface32
+    4300000: polySurface18
+    4300002: polySurface19
+    4300004: polySurface20
+    4300006: polySurface21
+    4300008: polySurface22
+    4300010: polySurface23
+    4300012: polySurface24
+    4300014: polySurface25
+    4300016: polySurface26
+    4300018: polySurface27
+    4300020: polySurface28
+    4300022: polySurface29
+    4300024: polySurface30
+    4300026: polySurface31
+    4300028: polySurface32
+>>>>>>> dbd88becf800c728f0525aaa115f4749c7782374
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -227,6 +399,7 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
+<<<<<<< HEAD
     animationImportErrors: '
 
       Imported file ''gingerbreadman_V3'' conversion failed: Required human bone ''LeftLowerLeg''
@@ -238,6 +411,13 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
+=======
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+>>>>>>> dbd88becf800c728f0525aaa115f4749c7782374
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
@@ -247,7 +427,11 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
+<<<<<<< HEAD
     globalScale: 100
+=======
+    globalScale: 1
+>>>>>>> dbd88becf800c728f0525aaa115f4749c7782374
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -270,6 +454,7 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+<<<<<<< HEAD
     human:
     - boneName: pCube2
       humanName: Hips
@@ -706,6 +891,10 @@ ModelImporter:
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
+=======
+    human: []
+    skeleton: []
+>>>>>>> dbd88becf800c728f0525aaa115f4749c7782374
     armTwist: .5
     foreArmTwist: .5
     upperLegTwist: .5
@@ -716,7 +905,11 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+<<<<<<< HEAD
   animationType: 3
+=======
+  animationType: 2
+>>>>>>> dbd88becf800c728f0525aaa115f4749c7782374
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

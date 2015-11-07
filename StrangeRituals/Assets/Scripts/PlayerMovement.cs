@@ -7,6 +7,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime * MovementSpeed, 0, Input.GetAxis("Vertical") * Time.deltaTime * MovementSpeed);
+        transform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime * MovementSpeed, 0, Input.GetAxis("Vertical") * Time.deltaTime * MovementSpeed,Space.World);
     }
 }

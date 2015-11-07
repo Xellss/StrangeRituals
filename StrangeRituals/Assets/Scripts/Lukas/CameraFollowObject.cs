@@ -5,6 +5,8 @@ public class CameraFollowObject : MonoBehaviour
 {
     public Transform Target;
 
+    public bool FreezeYPosition = true;
+
     private Transform myTransform;
 
     private float offsetPlayerX;
@@ -31,5 +33,12 @@ public class CameraFollowObject : MonoBehaviour
     private void UpdatePosition()
     {
         myTransform.position = Target.position + new Vector3(offsetPlayerX, offsetPlayerY, offsetPlayerZ);
+
+        if (FreezeYPosition)
+        {
+            Vector3 tempVector = myTransform.position;
+            tempVector.y = offsetPlayerY;
+            myTransform.position = tempVector;
+        }
     }
 }

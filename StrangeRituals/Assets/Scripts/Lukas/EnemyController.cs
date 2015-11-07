@@ -24,7 +24,7 @@ public class EnemyController : MonoBehaviour
         myTransform = GetComponent<Transform>();
         myRigidBody = GetComponent<Rigidbody>();
         myHealth = GetComponent<Health>();
-        BloodParticle = GetComponent<ParticleSystem>();
+        BloodParticle = GetComponentInChildren<ParticleSystem>();
     }
 
     void Start()

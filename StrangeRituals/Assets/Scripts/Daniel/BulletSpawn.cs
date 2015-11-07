@@ -5,6 +5,7 @@ public class BulletSpawn : MonoBehaviour {
 
     public GameObject BulletPrefab;
     public Transform Player;
+    public AudioSource ShotSound;
     public float BulletForce = 100;
     public float LifeTime = 1;
     public float MaxDelayTime = 0.6f;
@@ -36,6 +37,9 @@ public class BulletSpawn : MonoBehaviour {
         {
             if (Input.GetAxis("Shoot") > 0.1f || Input.GetMouseButton(0))
             {
+                ShotSound.Stop();
+                ShotSound.Play();
+
                 newBullet = (GameObject)Instantiate(BulletPrefab, myTransForm.position, myTransForm.rotation);
                 Rigidbody bulletRig = newBullet.GetComponent<Rigidbody>();
                 bulletRig.AddForce(Player.transform.forward * BulletForce);

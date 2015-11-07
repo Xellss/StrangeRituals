@@ -15,8 +15,14 @@ public class BulletSpawn : MonoBehaviour {
 
     private GameObject newBullet;
     private Rigidbody myRigidbody;
+    private Transform myTransForm;
     private int bulletAmount = 0;
 
+    void Awake()
+    {
+        myTransForm = GetComponent<Transform>();  
+    }
+    
     void Update()
     {
         CooldownWeapon();
@@ -29,9 +35,9 @@ public class BulletSpawn : MonoBehaviour {
         {
             if (Input.GetAxis("Shoot") > 0.1f)
             {
-                newBullet = (GameObject)Instantiate(BulletPrefab, transform.position, Quaternion.identity);
+                newBullet = (GameObject)Instantiate(BulletPrefab, myTransForm.position, myTransForm.rotation);
                 Rigidbody bulletRig = newBullet.GetComponent<Rigidbody>();
-                bulletRig.AddRelativeForce(Player.transform.forward * BulletForce);
+                bulletRig.AddForce(Player.transform.forward * BulletForce);
                 bulletAmount++;
                 StartCoroutine(DestroyAfterLifetime(newBullet));
                 StartCoroutine(ShootDelay());

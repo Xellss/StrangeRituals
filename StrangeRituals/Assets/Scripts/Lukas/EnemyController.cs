@@ -6,11 +6,11 @@ using System.Collections;
 public class EnemyController : MonoBehaviour 
 {
     public Transform Target;
-    public ParticleSystem BloodParticle;
     public float Speed = 0.5f;
     public float RotationSpeed = 1;
     public int AttackDamage = 20;
 
+    private ParticleSystem BloodParticle;
     private Transform myTransform;
     private Rigidbody myRigidBody;
     private Health myHealth;
@@ -37,7 +37,6 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         FollowPlayer();
-        print(BloodParticle.isPlaying);
     }
 
     void OnCollisionEnter(Collision other)

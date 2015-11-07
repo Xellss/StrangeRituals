@@ -60,6 +60,8 @@
      <Compile Include="Assets\Scripts\Lukas\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\Lukas\GameManager.cs" />
      <Compile Include="Assets\Scripts\Lukas\Health.cs" />
+     <Compile Include="Assets\Scripts\Lukas\RemoveOnCollision.cs" />
+     <Compile Include="Assets\Scripts\Lukas\TextureFadeOut.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/5.2.2f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

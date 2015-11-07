@@ -24,7 +24,7 @@ public class EnemyController : MonoBehaviour
         myTransform = GetComponent<Transform>();
         myRigidBody = GetComponent<Rigidbody>();
         myHealth = GetComponent<Health>();
-        BloodParticle = GetComponent<ParticleSystem>();
+        BloodParticle = GetComponentInChildren<ParticleSystem>();
     }
 
     void Start()
@@ -55,7 +55,7 @@ public class EnemyController : MonoBehaviour
             BloodParticle.Play();
 
             GameObject otherGameObject = other.gameObject;
-            Bullet otherBullet = otherGameObject.GetComponent<Bullet>();
+            Bullet otherBullet = otherGameObject.GetComponentInChildren<Bullet>();
             myHealth.DecreaseHealth(otherBullet.Damage);
         }
     }

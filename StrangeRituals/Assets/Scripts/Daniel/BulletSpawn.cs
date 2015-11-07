@@ -24,7 +24,6 @@ public class BulletSpawn : MonoBehaviour {
         CooldownWeapon();
         bulletSpawn();
     }
-    
 
     void bulletSpawn()
     {

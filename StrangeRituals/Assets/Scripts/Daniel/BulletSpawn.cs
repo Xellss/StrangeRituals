@@ -14,7 +14,6 @@ public class BulletSpawn : MonoBehaviour {
     public static bool Reload = false;
     public int Damage = 51;
 
-
     private GameObject newBullet;
     private Rigidbody myRigidbody;
     private int bulletAmount = 0;
@@ -24,7 +23,6 @@ public class BulletSpawn : MonoBehaviour {
         CooldownWeapon();
         bulletSpawn();
     }
-    
 
     void bulletSpawn()
     {
@@ -66,6 +64,4 @@ public class BulletSpawn : MonoBehaviour {
         yield return new WaitForSeconds(DelayTime);
         CanShoot = true;
     }
-
-
 }

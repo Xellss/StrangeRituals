@@ -7,7 +7,8 @@ public class BulletSpawn : MonoBehaviour {
     public Transform Player;
     public float BulletForce = 100;
     public float LifeTime = 1;
-    public float DelayTime = 0.5f;
+    public float MaxDelayTime = 0.6f;
+    public float MinDelayTime = 0.4f;
     public int MaxBulletAmount = 100;
     public float ReloadTime = 1;
     public static bool CanShoot = true;
@@ -33,7 +34,7 @@ public class BulletSpawn : MonoBehaviour {
     {
         if (CanShoot && !Reload)
         {
-            if (Input.GetAxis("Shoot") > 0.1f)
+            if (Input.GetAxis("Shoot") > 0.1f || Input.GetMouseButton(0))
             {
                 newBullet = (GameObject)Instantiate(BulletPrefab, myTransForm.position, myTransForm.rotation);
                 Rigidbody bulletRig = newBullet.GetComponent<Rigidbody>();
@@ -69,7 +70,7 @@ public class BulletSpawn : MonoBehaviour {
     IEnumerator ShootDelay()
     {
         CanShoot = false;
-        yield return new WaitForSeconds(DelayTime);
+        yield return new WaitForSeconds(Random.Range((float)MinDelayTime, (float)MaxDelayTime));
         CanShoot = true;
     }
 }

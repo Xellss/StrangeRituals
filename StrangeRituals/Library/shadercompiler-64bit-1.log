@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+Base path: C:/Program Files/Unity/5.2.2f1/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-2516
+Cmd: getPlatforms
+=======
 Base path: C:/Program Files/Unity/Editor/Data
 <<<<<<< HEAD
 Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-6292
@@ -38,3 +43,4 @@ Cmd: compileSnippet
 Cmd: compileSnippet
   api=4 type=1 insize=938 outsize=5515 kw=DIRECTIONAL SHADOWS_OFF pd= ok=1
 >>>>>>> 8d3f06901842a633a51461bb5ba8dd76c05e0bae
+>>>>>>> 606f32bb5d414dca572fc7a3738336db1e2932a2

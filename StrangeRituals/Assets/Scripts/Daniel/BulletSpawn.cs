@@ -22,8 +22,8 @@ public class BulletSpawn : MonoBehaviour {
     {
         CooldownWeapon();
         bulletSpawn();
-        //print(bulletAmount);
     }
+    
 
     void bulletSpawn()
     {
@@ -35,7 +35,6 @@ public class BulletSpawn : MonoBehaviour {
             bulletAmount++;
             StartCoroutine(DestroyAfterLifetime(newBullet));
             StartCoroutine(ShootDelay());
-            //print(bulletAmount);
         }
     }
 

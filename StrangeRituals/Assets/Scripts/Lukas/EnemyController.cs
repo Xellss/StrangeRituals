@@ -16,6 +16,7 @@ public class EnemyController : MonoBehaviour
     private Transform myTransform;
     private Rigidbody myRigidBody;
     private Health myHealth;
+    private NavMeshAgent agent;
 
     private float rotation;
     private float attackTimer;
@@ -35,6 +36,8 @@ public class EnemyController : MonoBehaviour
         GameManagerObject = GamemanagerGameObject.GetComponent<GameManager>();
 
         GameObject TargetGameobject = GameObject.Find("Player");
+        agent = GetComponent<NavMeshAgent>();
+        agent.destination = TargetGameobject.transform.position;
         Target = TargetGameobject.GetComponent<Transform>();
         myRigidBody.drag = 15;
     }
@@ -43,6 +46,7 @@ public class EnemyController : MonoBehaviour
     {
         if (!GameManagerObject.Pause)
             FollowPlayer();
+        UpdateGoalPosition();
     }
 
     void OnCollisionEnter(Collision other)
@@ -69,10 +73,14 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    private void UpdateGoalPosition()
+    {
+        agent.destination = Target.transform.position;
+    }
+
     private void FollowPlayer()
     {
         RotateToTarget();
-        myRigidBody.AddRelativeForce(Vector3.forward * Speed, ForceMode.Force);
     }
 
     private void RotateToTarget()

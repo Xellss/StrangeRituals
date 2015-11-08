@@ -1418,7 +1418,9 @@ ModelImporter:
     401408: transform98
     401410: transform99
     2300000: polySurface507
+    2300002: //RootNode
     3300000: polySurface507
+    3300002: //RootNode
     4300000: polySurface507
     9500000: //RootNode
   materials:
@@ -1444,7 +1446,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 100
+    globalScale: 200
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

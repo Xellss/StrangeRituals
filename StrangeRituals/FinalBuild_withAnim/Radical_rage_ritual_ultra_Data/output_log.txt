@@ -1,0 +1,54 @@
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4600 (ID=0x416)
+    Vendor:   Intel
+    VRAM:     128 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\LudusExtremus\Documents\Unityprojects\InnoGameJam2015\StrangeRituals\StrangeRituals\FinalBuild_withAnim\Radical_rage_ritual_ultra_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\LudusExtremus\Documents\Unityprojects\InnoGameJam2015\StrangeRituals\StrangeRituals\FinalBuild_withAnim\Radical_rage_ritual_ultra_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\LudusExtremus\Documents\Unityprojects\InnoGameJam2015\StrangeRituals\StrangeRituals\FinalBuild_withAnim\Radical_rage_ritual_ultra_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\LudusExtremus\Documents\Unityprojects\InnoGameJam2015\StrangeRituals\StrangeRituals\FinalBuild_withAnim\Radical_rage_ritual_ultra_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\LudusExtremus\Documents\Unityprojects\InnoGameJam2015\StrangeRituals\StrangeRituals\FinalBuild_withAnim\Radical_rage_ritual_ultra_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\LudusExtremus\Documents\Unityprojects\InnoGameJam2015\StrangeRituals\StrangeRituals\FinalBuild_withAnim\Radical_rage_ritual_ultra_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\LudusExtremus\Documents\Unityprojects\InnoGameJam2015\StrangeRituals\StrangeRituals\FinalBuild_withAnim\Radical_rage_ritual_ultra_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\LudusExtremus\Documents\Unityprojects\InnoGameJam2015\StrangeRituals\StrangeRituals\FinalBuild_withAnim\Radical_rage_ritual_ultra_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\LudusExtremus\Documents\Unityprojects\InnoGameJam2015\StrangeRituals\StrangeRituals\FinalBuild_withAnim\Radical_rage_ritual_ultra_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\LudusExtremus\Documents\Unityprojects\InnoGameJam2015\StrangeRituals\StrangeRituals\FinalBuild_withAnim\Radical_rage_ritual_ultra_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\LudusExtremus\Documents\Unityprojects\InnoGameJam2015\StrangeRituals\StrangeRituals\FinalBuild_withAnim\Radical_rage_ritual_ultra_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\LudusExtremus\Documents\Unityprojects\InnoGameJam2015\StrangeRituals\StrangeRituals\FinalBuild_withAnim\Radical_rage_ritual_ultra_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\LudusExtremus\Documents\Unityprojects\InnoGameJam2015\StrangeRituals\StrangeRituals\FinalBuild_withAnim\Radical_rage_ritual_ultra_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.047 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\LudusExtremus\Documents\Unityprojects\InnoGameJam2015\StrangeRituals\StrangeRituals\FinalBuild_withAnim\Radical_rage_ritual_ultra_Data\Managed\System.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2f18 -> priority: 1 
+  Thread -> id: 1698 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.149365 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2996.
+Total: 0.716482 ms (FindLiveObjects: 0.082898 ms CreateObjectMapping: 0.063555 ms MarkObjects: 0.435810 ms  DeleteObjects: 0.133822 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.086433 ms
+
+Unloading 268 unused Assets to reduce memory usage. Loaded Objects now: 247.
+Total: 1.163741 ms (FindLiveObjects: 0.045002 ms CreateObjectMapping: 0.016579 ms MarkObjects: 0.118821 ms  DeleteObjects: 0.982548 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.005838 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 247.
+Total: 0.137375 ms (FindLiveObjects: 0.009868 ms CreateObjectMapping: 0.008289 ms MarkObjects: 0.114084 ms  DeleteObjects: 0.005131 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.273171 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 247.
+Total: 0.144086 ms (FindLiveObjects: 0.009868 ms CreateObjectMapping: 0.020922 ms MarkObjects: 0.108952 ms  DeleteObjects: 0.004342 ms)
+

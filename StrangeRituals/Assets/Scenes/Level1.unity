@@ -6622,7 +6622,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400544, guid: 3325338b5867d634b96ed5897a64afb2, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 11442190, guid: 3325338b5867d634b96ed5897a64afb2, type: 2}
       propertyPath: GameManager

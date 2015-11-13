@@ -12,8 +12,8 @@ public class CharakterAnimation : MonoBehaviour {
     void Awake()
     {
         myAnimator = GetComponent<Animator>();
-        Fire1 = GameObject.Find("Muzzle_1");
-        Fire2 = GameObject.Find("Muzzle_2");
+        Fire1 = GameObject.Find("Cylinder_1_2_2");
+        Fire2 = GameObject.Find("Cylinder_1_3_2");
         Fire1R = Fire1.GetComponent<MeshRenderer>();
         Fire2R = Fire2.GetComponent<MeshRenderer>();
 

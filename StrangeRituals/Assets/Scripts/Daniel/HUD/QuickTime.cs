@@ -10,11 +10,15 @@ public class QuickTime : MonoBehaviour
     public Transform QuickTimeTwo;
     public Transform QuickTimeThree;
     public Transform ActivateQuickTimeEvent;
+    public GameObject ChristmasTree;
+    public GameObject Spawner;
+    
 
     private Animator QuickTimeOneA;
     private Animator QuickTimeTwoA;
     private Animator QuickTimeThreeA;
     private PlayerItems playerItems;
+    private EnemySpawner enemySpawner;
 
     private Transform left;
     private Transform right;
@@ -59,6 +63,7 @@ public class QuickTime : MonoBehaviour
         QuickTimeTwoA = QuickTimeTwo.GetComponent<Animator>();
         QuickTimeThreeA = QuickTimeThree.GetComponent<Animator>();
 
+        enemySpawner = Spawner.GetComponent<EnemySpawner>();
         playerItems = GetComponent<PlayerItems>();
     }
 
@@ -80,6 +85,7 @@ public class QuickTime : MonoBehaviour
     void winGame()
     {
         print("WINWINWIN");
+        ChristmasTree.SetActive(true);
     }
 
     void OnTriggerEnter(Collider other)
@@ -214,6 +220,10 @@ public class QuickTime : MonoBehaviour
                 playerItems.HasItem1 = false;
                 playerItems.Item2.SetActive(true);
 
+                enemySpawner.StartSpawning = true;
+                //enemySpawner.StartSpawning = false;
+
+
                 playerItems.lookAtPentagram = false;
                 playerItems.lookAtItem2 = true;
 
@@ -295,6 +305,9 @@ public class QuickTime : MonoBehaviour
                 StartCoroutine(waitForDestroy(QuickTimeTwo.gameObject));
                 playerItems.HasItem2 = false;
                 playerItems.Item3.SetActive(true);
+
+                enemySpawner.StartSpawning = true;
+                //enemySpawner.StartSpawning = false;
 
                 playerItems.lookAtPentagram = false;
                 playerItems.lookAtItem3 = true;
@@ -391,6 +404,8 @@ public class QuickTime : MonoBehaviour
                 playerItems.HasItem3 = false;
                 //playerItems.lookAtPentagram = false;
                 playerItems.NaviRenderer.enabled = false;
+
+
 
             }
         }

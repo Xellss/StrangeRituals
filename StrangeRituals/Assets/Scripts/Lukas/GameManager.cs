@@ -3,15 +3,15 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour 
 {
-    public int WaveCountdown = 60;
+    [Tooltip("Fire this To spawn an Extra Wave")]
+    public bool SpawnExtraWave = false;
+
     public bool Pause = false;
+    [Tooltip("Change this to change Ritual Level")]
     public int CurrentStage = 1;
 
-    [HideInInspector]
     public bool Level_1;
-    [HideInInspector]
     public bool Level_2;
-    [HideInInspector]
     public bool Level_3;
 
     private bool canPress = true;

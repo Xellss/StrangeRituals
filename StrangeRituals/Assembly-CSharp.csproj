@@ -59,13 +59,16 @@
      <Compile Include="Assets\Scripts\Lukas\Bullet.cs" />
      <Compile Include="Assets\Scripts\Lukas\CameraFollowObject.cs" />
      <Compile Include="Assets\Scripts\Lukas\CaracterController.cs" />
+     <Compile Include="Assets\Scripts\Lukas\ContinouslyWaveSpawner.cs" />
      <Compile Include="Assets\Scripts\Lukas\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Lukas\EnemySpawner.cs" />
+     <Compile Include="Assets\Scripts\Lukas\ExtraWavesSpawner.cs" />
      <Compile Include="Assets\Scripts\Lukas\GameManager.cs" />
      <Compile Include="Assets\Scripts\Lukas\Health.cs" />
      <Compile Include="Assets\Scripts\Lukas\LifeTime.cs" />
      <Compile Include="Assets\Scripts\Lukas\RemoveOnCollision.cs" />
      <Compile Include="Assets\Scripts\Lukas\TextureFadeOut.cs" />
+     <Compile Include="Assets\Scripts\Lukas\Wave.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />

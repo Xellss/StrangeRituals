@@ -39,7 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f05ffec6e25cbdc43bafad7b57e1ae2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaveCountdown: 60
+  SpawnExtraWave: 0
   Pause: 0
   CurrentStage: 1
   Level_1: 0

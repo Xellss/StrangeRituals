@@ -47,7 +47,6 @@
   <ItemGroup>
      <Compile Include="Assets\CollectItem.cs" />
      <Compile Include="Assets\OldSchoolPixelFX\Helper Script\Screenshotter.cs" />
-     <Compile Include="Assets\PlayerItems.cs" />
      <Compile Include="Assets\Scripts\Daniel\BulletSpawn.cs" />
      <Compile Include="Assets\Scripts\Daniel\CharakterAnimation.cs" />
      <Compile Include="Assets\Scripts\Daniel\GatlinRotate.cs" />
@@ -55,19 +54,21 @@
      <Compile Include="Assets\Scripts\Daniel\Rotatet.cs" />
      <Compile Include="Assets\Scripts\Julian\DestroyObject.cs" />
      <Compile Include="Assets\Scripts\Julian\Movement.cs" />
+     <Compile Include="Assets\Scripts\Julian\PlayerItems.cs" />
      <Compile Include="Assets\Scripts\Julian\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Lukas\Bullet.cs" />
      <Compile Include="Assets\Scripts\Lukas\CameraFollowObject.cs" />
      <Compile Include="Assets\Scripts\Lukas\CaracterController.cs" />
+     <Compile Include="Assets\Scripts\Lukas\ContinouslyWaveSpawner.cs" />
      <Compile Include="Assets\Scripts\Lukas\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Lukas\EnemySpawner.cs" />
+     <Compile Include="Assets\Scripts\Lukas\ExtraWavesSpawner.cs" />
      <Compile Include="Assets\Scripts\Lukas\GameManager.cs" />
      <Compile Include="Assets\Scripts\Lukas\Health.cs" />
-     <Compile Include="Assets\Scripts\Lukas\LevelChanger.cs" />
      <Compile Include="Assets\Scripts\Lukas\LifeTime.cs" />
      <Compile Include="Assets\Scripts\Lukas\RemoveOnCollision.cs" />
      <Compile Include="Assets\Scripts\Lukas\TextureFadeOut.cs" />
-     <Compile Include="Assets\Scripts\QuickTime.cs" />
+     <Compile Include="Assets\Scripts\Lukas\Wave.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />

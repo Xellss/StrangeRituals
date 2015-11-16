@@ -44,11 +44,6 @@ public class CaracterController : MonoBehaviour
         {
             Move();
             Rotate();
-            if (transform.position.y >1f)
-            {
-                Vector3 oldPosition = transform.position;
-                transform.position = new Vector3(oldPosition.x, 0, oldPosition.z);
-            }
         }
     }
 

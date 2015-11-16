@@ -15,6 +15,9 @@ public class CaracterController : MonoBehaviour
     private Health myHealth;
     private Transform myTransform;
     private Rigidbody myRigidBody;
+    private LookAtMouse lookAtMouse;
+    private QuickTimeKeyboard quickTimeKeyboard;
+    private QuickTimeXbox quickTimeXbox;
 
     private float angleToAvoid = 220.25f;
     private float angleBackUp;
@@ -24,6 +27,9 @@ public class CaracterController : MonoBehaviour
 
     void Awake()
     {
+        lookAtMouse = GetComponent<LookAtMouse>();
+        quickTimeKeyboard = GetComponent<QuickTimeKeyboard>();
+        quickTimeXbox = GetComponent<QuickTimeXbox>();
         mainCamera = Camera.main;
         myTransform = GetComponent<Transform>();
         myRigidBody = GetComponent<Rigidbody>();
@@ -38,6 +44,11 @@ public class CaracterController : MonoBehaviour
         {
             Move();
             Rotate();
+            if (transform.position.y >1f)
+            {
+                Vector3 oldPosition = transform.position;
+                transform.position = new Vector3(oldPosition.x, 0, oldPosition.z);
+            }
         }
     }
 
@@ -57,6 +68,9 @@ public class CaracterController : MonoBehaviour
     {
         if (UseJoyStick)
         {
+            lookAtMouse.enabled = false;
+            quickTimeXbox.enabled = true;
+            quickTimeKeyboard.enabled = false;
             float y = Input.GetAxis("rotY");
             float x = Input.GetAxis("rotX");
 
@@ -70,22 +84,17 @@ public class CaracterController : MonoBehaviour
         }
         else
         {
-            camDistance = mainCamera.transform.position.y - myTransform.position.y;
-
-            Vector3 target = mainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, camDistance));
-
-            float angleRad = Mathf.Atan2(target.y - myTransform.position.y, target.x - myTransform.position.x);
-            float angle = (180 / Mathf.PI) * angleRad - 90;
-
-            myRigidBody.rotation = new Quaternion(0, angle, 0, 0);
+            lookAtMouse.enabled = true;
+            quickTimeXbox.enabled = false;
+            quickTimeKeyboard.enabled = true;
         }
     }
 
     private void Move()
     {
-            if (MoveOverTransform)
-                myTransform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime * MovementSpeed, 0, Input.GetAxis("Vertical") * Time.deltaTime * MovementSpeed, Space.World);
-            else
-                myRigidBody.AddForce(new Vector3(Input.GetAxis("Horizontal") * MovementSpeed * Time.deltaTime, 0, Input.GetAxis("Vertical")) * MovementSpeed * Time.deltaTime);
+        if (MoveOverTransform)
+            myTransform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime * MovementSpeed, 0, Input.GetAxis("Vertical") * Time.deltaTime * MovementSpeed, Space.World);
+        else
+            myRigidBody.AddForce(new Vector3(Input.GetAxis("Horizontal") * MovementSpeed * Time.deltaTime, 0, Input.GetAxis("Vertical")) * MovementSpeed * Time.deltaTime);
     }
 }

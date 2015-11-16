@@ -3,6 +3,8 @@ using System.Collections;
 
 public class CharakterAnimation : MonoBehaviour {
 
+    public BulletSpawn BulletShoot;
+
     Animator myAnimator;
     GameObject Fire1;
     GameObject Fire2;
@@ -21,7 +23,7 @@ public class CharakterAnimation : MonoBehaviour {
 	
 	void Update () 
     {
-        if (Input.GetAxis("Shoot") > 0.1f || Input.GetMouseButton(0) && BulletSpawn.CanShoot && !BulletSpawn.Reload)
+        if ((Input.GetAxis("Shoot") > 0.1f || Input.GetMouseButton(0)) /*&& BulletShoot.CanShoot*/ && !BulletShoot.Reload)
         {
             myAnimator.Play("Shoot");
             Fire1R.enabled = true;

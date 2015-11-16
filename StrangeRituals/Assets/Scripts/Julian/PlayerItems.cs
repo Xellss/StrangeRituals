@@ -28,14 +28,14 @@ public class PlayerItems : MonoBehaviour
     private GameManager gameManagerObject;
     [HideInInspector]
     public MeshRenderer NaviRenderer;
-    private QuickTime quickTime;
+    private QuickTimeXbox quickTime;
 
     void Awake()
     {
         GameObject gameManagergameObject = GameObject.Find("Gamemanager");
         gameManagerObject = gameManagergameObject.GetComponent<GameManager>();
 
-        quickTime = GetComponent<QuickTime>();
+        quickTime = GetComponent<QuickTimeXbox>();
         NaviRenderer = Navi.GetComponent<MeshRenderer>();
     }
     void Start()

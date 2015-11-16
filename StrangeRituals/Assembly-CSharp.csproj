@@ -48,10 +48,14 @@
      <Compile Include="Assets\CollectItem.cs" />
      <Compile Include="Assets\OldSchoolPixelFX\Helper Script\Screenshotter.cs" />
      <Compile Include="Assets\Scripts\Daniel\BulletSpawn.cs" />
+     <Compile Include="Assets\Scripts\Daniel\ChaAnimation.cs" />
      <Compile Include="Assets\Scripts\Daniel\CharakterAnimation.cs" />
      <Compile Include="Assets\Scripts\Daniel\GatlinRotate.cs" />
-     <Compile Include="Assets\Scripts\Daniel\HUD\QuickTime.cs" />
+     <Compile Include="Assets\Scripts\Daniel\HUD\QuickTimeKeyboard.cs" />
+     <Compile Include="Assets\Scripts\Daniel\HUD\QuickTimeXbox.cs" />
      <Compile Include="Assets\Scripts\Daniel\LoadLevel.cs" />
+     <Compile Include="Assets\Scripts\Daniel\LoadScene.cs" />
+     <Compile Include="Assets\Scripts\Daniel\LookAtMouse.cs" />
      <Compile Include="Assets\Scripts\Daniel\PlayerAudioController.cs" />
      <Compile Include="Assets\Scripts\Daniel\RotateItems.cs" />
      <Compile Include="Assets\Scripts\Daniel\Rotatet.cs" />

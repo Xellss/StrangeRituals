@@ -3,7 +3,7 @@ using System.Collections;
 using System;
 using UnityEngine.UI;
 
-public class QuickTime : MonoBehaviour
+public class QuickTimeXbox : MonoBehaviour
 {
 
     public Transform QuickTimeOne;
@@ -12,13 +12,15 @@ public class QuickTime : MonoBehaviour
     public Transform ActivateQuickTimeEvent;
     public GameObject ChristmasTree;
     public GameObject Spawner;
-    
+    public GameManager GameManager;
+
 
     private Animator QuickTimeOneA;
     private Animator QuickTimeTwoA;
     private Animator QuickTimeThreeA;
     private PlayerItems playerItems;
     private EnemySpawner enemySpawner;
+    private CaracterController characterController;
 
     private Transform left;
     private Transform right;
@@ -51,7 +53,7 @@ public class QuickTime : MonoBehaviour
     private bool key7 = false;
     private bool key8 = false;
 
-    
+
 
     private float h;
     private float v;
@@ -65,20 +67,25 @@ public class QuickTime : MonoBehaviour
 
         enemySpawner = Spawner.GetComponent<EnemySpawner>();
         playerItems = GetComponent<PlayerItems>();
+        characterController = GetComponent<CaracterController>();
     }
 
     void Update()
     {
-        if (!WinGame && !end)
+        if (characterController.UseJoyStick)
         {
-            activateQuickTime();
-            CheckStop();
+            if (!WinGame && !end)
+            {
+                activateQuickTime();
+                CheckStop();
+            }
+            if (WinGame && !end)
+            {
+                winGame();
+                end = true;
+            }
         }
-        if (WinGame && !end)
-        {
-            winGame();
-            end = true;
-        }
+
 
     }
 
@@ -90,7 +97,7 @@ public class QuickTime : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Ritual" && !end && playerItems.HasItem1 || playerItems.HasItem2 || playerItems.HasItem3)
+        if ((other.gameObject.tag == "Ritual" && characterController.UseJoyStick && !end) && playerItems.HasItem1 || (characterController.UseJoyStick && playerItems.HasItem2) || (characterController.UseJoyStick && playerItems.HasItem3))
         {
             ActivateQuickTimeEvent.gameObject.SetActive(true);
             canActivateQuickTime = true;
@@ -110,25 +117,25 @@ public class QuickTime : MonoBehaviour
 
     void activateQuickTime()
     {
-        if (Input.GetButtonDown("StartQuickTime") && canActivateQuickTime)
+        if (Input.GetButtonDown("StartQuickTime") && canActivateQuickTime && !GameManager.Pause)
         {
             if (!checkQuickTimeOne && playerItems.HasItem1)
             {
                 ActivateQuickTimeEvent.gameObject.SetActive(false);
-                StartCoroutine(waitForFail(QuickTimeOne,5));
+                StartCoroutine(waitForFail(QuickTimeOne, 3));
                 StartEventOne();
             }
 
             if (checkQuickTimeOne && !checkQuickTimeTwo && playerItems.HasItem2)
             {
-                StartCoroutine(waitForFail(QuickTimeTwo,10));
+                StartCoroutine(waitForFail(QuickTimeTwo, 4));
                 ActivateQuickTimeEvent.gameObject.SetActive(false);
                 StartEventTwo();
-
             }
+
             if (checkQuickTimeOne && checkQuickTimeTwo && !checkQuickTimeThree && playerItems.HasItem3)
             {
-                StartCoroutine(waitForFail(QuickTimeThree, 15));
+                StartCoroutine(waitForFail(QuickTimeThree, 5));
                 ActivateQuickTimeEvent.gameObject.SetActive(false);
                 StartEventThree();
             }
@@ -153,15 +160,19 @@ public class QuickTime : MonoBehaviour
     }
     private void CheckStop()
     {
-        if (!WinEventOne)
+        if (!WinEventOne && !GameManager.Pause)
         {
+            left = QuickTimeOne.FindChild("Left");
+            right = QuickTimeOne.FindChild("Right");
+            up = QuickTimeOne.FindChild("Up");
+            down = QuickTimeOne.FindChild("Down");
             StopEventOne();
         }
-        if (!WinEventTwo)
+        if (!WinEventTwo && !GameManager.Pause)
         {
             StopEventTwo();
         }
-        if (!WinEventThree)
+        if (!WinEventThree && !GameManager.Pause)
         {
             StopEventThree();
         }
@@ -176,6 +187,15 @@ public class QuickTime : MonoBehaviour
         if (closeQuickTime && !WinEventOne && !WinGame)
         {
             QuickTimeOne.gameObject.SetActive(false);
+            StopAllCoroutines();
+            left.gameObject.SetActive(true);
+            right.gameObject.SetActive(true);
+            up.gameObject.SetActive(true);
+            down.gameObject.SetActive(true);
+
+            key1 = false;
+            key2 = false;
+            key3 = false;
         }
 
         if (!WinEventOne && eventStarter && !WinGame)
@@ -244,7 +264,19 @@ public class QuickTime : MonoBehaviour
 
         if (closeQuickTime && !WinEventTwo && WinEventOne && !WinGame)
         {
-            QuickTimeOne.gameObject.SetActive(false);
+            QuickTimeTwo.gameObject.SetActive(false);
+            StopAllCoroutines();
+            y.gameObject.SetActive(true);
+            x.gameObject.SetActive(true);
+            left.gameObject.SetActive(true);
+            a.gameObject.SetActive(true);
+            up.gameObject.SetActive(true);
+            down.gameObject.SetActive(true);
+            key1 = false;
+            key2 = false;
+            key3 = false;
+            key4 = false;
+            key5 = false;
         }
 
         if (!WinEventTwo && eventStarter && WinEventOne && !WinGame)
@@ -327,7 +359,23 @@ public class QuickTime : MonoBehaviour
 
         if (closeQuickTime && !WinEventThree && WinEventOne && WinEventTwo && !WinGame)
         {
-            QuickTimeOne.gameObject.SetActive(false);
+            QuickTimeThree.gameObject.SetActive(false);
+            StopAllCoroutines();
+            up.gameObject.SetActive(true);
+            down.gameObject.SetActive(true);
+            left.gameObject.SetActive(true);
+            right.gameObject.SetActive(true);
+            a.gameObject.SetActive(true);
+            b.gameObject.SetActive(true);
+            y.gameObject.SetActive(true);
+            x.gameObject.SetActive(true);
+            key1 = false;
+            key2 = false;
+            key3 = false;
+            key4 = false;
+            key5 = false;
+            key6 = false;
+            key7 = false;
         }
 
         if (!WinEventThree && eventStarter && WinEventOne && WinEventTwo && !WinGame)
@@ -411,7 +459,7 @@ public class QuickTime : MonoBehaviour
         }
     }
 
-    IEnumerator waitForDestroy(GameObject eventObject )
+    IEnumerator waitForDestroy(GameObject eventObject)
     {
         yield return new WaitForSeconds(0.3f);
         Destroy(eventObject);
@@ -432,13 +480,30 @@ public class QuickTime : MonoBehaviour
             right.gameObject.SetActive(true);
             up.gameObject.SetActive(true);
             down.gameObject.SetActive(true);
-            //Image i = QuickTimeOne.GetComponent<Image>();
 
 
 
         }
-        //if (winEventOne && !winEventTwo)
-        //if (winEventOne && winEventTwo && !winEventThree)
+        if (WinEventOne && !WinEventTwo)
+        {
+            y.gameObject.SetActive(true);
+            x.gameObject.SetActive(true);
+            left.gameObject.SetActive(true);
+            a.gameObject.SetActive(true);
+            up.gameObject.SetActive(true);
+            down.gameObject.SetActive(true);
+        }
+        if (WinEventOne && WinEventTwo && !WinEventThree)
+        {
+            up.gameObject.SetActive(true);
+            down.gameObject.SetActive(true);
+            left.gameObject.SetActive(true);
+            right.gameObject.SetActive(true);
+            a.gameObject.SetActive(true);
+            b.gameObject.SetActive(true);
+            y.gameObject.SetActive(true);
+            x.gameObject.SetActive(true);
+        }
     }
     IEnumerator pla(GameObject eventObject)
     {
@@ -461,9 +526,30 @@ public class QuickTime : MonoBehaviour
 
         }
         if (WinEventOne && !WinEventTwo)
+        {
             QuickTimeTwoA.Play("QuickTimeFale");
+            y.gameObject.SetActive(true);
+            x.gameObject.SetActive(true);
+            left.gameObject.SetActive(true);
+            a.gameObject.SetActive(true);
+            up.gameObject.SetActive(true);
+            down.gameObject.SetActive(true);
+
+        }
         if (WinEventOne && WinEventTwo && !WinEventThree)
+        {
             QuickTimeThreeA.Play("QuickTimeFale");
+            up.gameObject.SetActive(true);
+            down.gameObject.SetActive(true);
+            left.gameObject.SetActive(true);
+            right.gameObject.SetActive(true);
+            a.gameObject.SetActive(true);
+            b.gameObject.SetActive(true);
+            y.gameObject.SetActive(true);
+            x.gameObject.SetActive(true);
+
+
+        }
 
         StartCoroutine(waitForDisable(quickTime.gameObject));
         StartCoroutine(showButto());
@@ -478,7 +564,7 @@ public class QuickTime : MonoBehaviour
             canActivateQuickTime = true;
             closeQuickTime = false;
         }
-        
+
     }
 
 }

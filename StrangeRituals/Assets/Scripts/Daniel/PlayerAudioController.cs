@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerAudioController : MonoBehaviour
 {
+    public BulletSpawn BulletSpawn;
 
     AudioSource myAudio;
 

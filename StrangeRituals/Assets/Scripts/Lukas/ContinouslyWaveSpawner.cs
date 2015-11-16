@@ -53,18 +53,26 @@ public class ContinouslyWaveSpawner : MonoBehaviour
 
     private void Spawn()
     {
-        if (CurrentWave.SpawnCounter < CurrentWave.Amount)
-        {
-            CurrentWave.SpawnCounter++;
-            Instantiate(GetRandomEnemy(), GetSpawnPoint(), Quaternion.identity);
+        
+        
+            if (CurrentWave.SpawnCounter < CurrentWave.Amount)
+            {
+            if (!GameManager.Pause)
+            {
+                CurrentWave.SpawnCounter++;
+                Instantiate(GetRandomEnemy(), GetSpawnPoint(), Quaternion.identity);
+            }
+                
 
-            StartCoroutine(SpawnTimer());
-        }
-        else
-        {
-            if (CurrentWave.RepeatWaveAfter != 0)
-                StartCoroutine(WaveRepatTimer());
-        }
+                StartCoroutine(SpawnTimer());
+            }
+            else
+            {
+                if (CurrentWave.RepeatWaveAfter != 0)
+                    StartCoroutine(WaveRepatTimer());
+            }
+        
+        
     }
 
     private void CheckForNewWave()

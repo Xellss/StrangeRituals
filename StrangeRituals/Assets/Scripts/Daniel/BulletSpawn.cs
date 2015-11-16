@@ -6,14 +6,15 @@ public class BulletSpawn : MonoBehaviour {
     public GameObject BulletPrefab;
     public Transform Player;
     public AudioSource ShotSound;
+    public GameManager GameManager;
     public float BulletForce = 100;
     public float LifeTime = 1;
     public float MaxDelayTime = 0.6f;
     public float MinDelayTime = 0.4f;
     public int MaxBulletAmount = 100;
     public float ReloadTime = 1;
-    public static bool CanShoot = true;
-    public static bool Reload = false;
+    public  bool CanShoot = true;
+    public  bool Reload = false;
 
     private GameObject newBullet;
     private Rigidbody myRigidbody;
@@ -27,8 +28,12 @@ public class BulletSpawn : MonoBehaviour {
     
     void Update()
     {
-        CooldownWeapon();
-        bulletSpawn();
+        if (!GameManager.Pause)
+        {
+            CooldownWeapon();
+            bulletSpawn();
+        }
+        
     }
 
     void bulletSpawn()
